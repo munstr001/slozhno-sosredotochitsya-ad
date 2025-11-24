@@ -20,9 +20,11 @@
   --card-text-color: #353430;
 }
 
+/*
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  
 }
+*/
 
 .header__top-angle-text {
   display: none;

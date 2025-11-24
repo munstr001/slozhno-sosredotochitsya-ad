@@ -230,7 +230,7 @@
   font-family: var(--page-font-family);
   font-weight: var(--h1-font-weight);
   font-style: var(--h1-font-style);
-  font-size: var(--h1-font-size);
+
   line-height: var(--h1-line-height);
   align-self: center;
   justify-self: center;
@@ -281,7 +281,7 @@
   .header__decription {
     width: 48%;
     padding: 0;
-    justify-self: end;;
+    justify-self: end;
     margin-inline-end: 20px;
   }
 
@@ -422,6 +422,7 @@
     align-self: start;
     justify-self: center;
     margin-block-start: 20px;
+    display: none;
   }
 
   .header__theme-menu-list {
@@ -430,8 +431,8 @@
     margin: 0;
 
     display: flex;
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: row;
+    gap: 16px;
   }
 
   .header__top-angle {
@@ -443,16 +444,6 @@
     justify-self: center;
     margin-inline-end: 28%;
   } 
-
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-  }
-
-  .header__theme-menu {
-    display: none;
-  }
 
   .main__card_block_row {
     display: flex;
