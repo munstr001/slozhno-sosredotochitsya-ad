@@ -5,11 +5,19 @@
 
 /* Файл variables.css */
 :root {
+  --background-image: url("../images/cover-image-dark.png");
+  --bold-font-weight: 700;
+  --regular-font-weight: 400;
+  --page-font-family: 'IBM Plex mono';
+  --border-color: #FF0070;
+  --main-page-color: #FF0070;
+  --menu-button-color: #FF0070;
   --h1-font-color: #DB00FF;
   --h1-shadow-color: #FF0070;
   --h3-background-color: #FF0070;
   --h3-font-color: #000;
   --theme-menu-font-color: #FF0070;
+  --angle-font-color: #FF0070;
   --h2-font-color: #FF0070;
   --background-color: #000028;
   --card-text-color: #F1B2CE;
@@ -37,7 +45,7 @@
   --card-text-line-height: 130%;
   --card-text-color: #F1B2CE;
   --h3-font-weight-after-subtitle: 400;
-  --margin-inline-end-for-background: 10px;
+  --margin-inline: 10px;
   --header-background-image: url("../images/cover-image-dark.png");
-
+  --menu-font-size: 18px;
 }
