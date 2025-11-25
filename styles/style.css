@@ -17,7 +17,7 @@
   color: var(--text-color);
 }
 
-.header.decorated-zone {
+.header {
   position: relative;
   display: grid;
   height: 668px;
@@ -116,9 +116,7 @@
 
 .header__title {
   position: absolute;
-  inset: 0;
-  margin: auto;
-  margin-inline: 10px;
+  justify-self: start;
   font-family: var(--page-font-family);
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
@@ -126,8 +124,6 @@
 
   color: var(--h1-font-color);
   text-shadow: 4px 4px 0 var(--h1-shadow-color);
-  justify-self: start;
-  align-self: center;
 }
 
 
@@ -160,6 +156,7 @@
   line-height: var(--h2-line-height);
   color: var(--h2-font-color);
   margin-inline: var(--margin-inline);
+  margin-block: 0;
 }
 
 .main__card_block_element_title {
@@ -180,7 +177,7 @@
   font-size: var(--card-text-font-size);
   line-height: var(--card-text-line-height);
   color: var(--card-text-color);
-  margin-inline: var(--margin-inline);
+
 }
 
 .main__card_block_sub_title {
@@ -297,13 +294,6 @@
   .header__title {
     position: absolute;
     inset: 0;
-    margin: auto;
-    margin-inline: 10px;
-    font-family: var(--page-font-family);
-    font-size: var(--h1-font-size);
-    font-weight: var(--h1-font-weight);
-    line-height: var(--h1-line-height);
-
     color: var(--h1-font-color);
     text-shadow: 4px 4px 0 var(--h1-shadow-color);
     justify-self: start;
@@ -320,14 +310,6 @@
     inset: 0;
     margin: auto;
     margin-block-end: 17%;
-
-    color: var(--h3-font-color);
-    background-color: var(--h3-background-color);
-
-    font-family: var(--page-font-family);
-    font-size: var(--h3-font-size);
-    font-weight: var(--h3-font-weight);
-    line-height: var(--h3-line-height);
   }
 
   .header {
@@ -343,18 +325,40 @@
 
   .main__card_block:nth-of-type(1) {
     display: grid;
-    grid-template-columns: auto 64%;
+    width: 100%;
+    grid-template-columns: auto 472px;
+    justify-self: end;
     grid-template-rows: 1fr 1fr;
+    margin-inline: 20px;
+    margin-block-start: 60px;
+  }
+
+
+  .main__card_block:nth-of-type(1) .main__card_block_element {
+    margin-block-end: 20px;
   }
 
   .main__card_block:nth-of-type(1) .main__card_block_element:not(:first-of-type) {
     grid-column: 2;
   }
 
+  .main__card_block:nth-of-type(1) .main__card_block_element_text {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-block-start: 10px;
+  }
+
+  .main__card_block:nth-of-type(1) .main__card_block_title {
+    grid-column: 1;
+    padding-inline-start: 20px;
+    
+  }
+
   .main__card_block:nth-of-type(2) {
     display: grid;
     grid-template-rows: auto min-height;
-    margin-block: 0;
+    margin-block: 60px 0;
     padding-block: 0;
     height: fit-content;
     gap: 20px;
@@ -372,7 +376,11 @@
 
   .main__card_block:nth-of-type(2) .main__card_block_element_text {
     height: fit-content;
-    margin-block: 10px 0;
+    margin-block: 10px;
+  }
+
+  .main__card_block_element_title {
+    margin: 0 auto;
   }
 
   .main__card_block:nth-of-type(2) .main__card_block_element_title {
@@ -403,6 +411,7 @@
 
   .main__card_block:nth-of-type(3) .main__card_block_element_title {
     margin-block: 0;
+    width: 399px;
   }
 
   .main__card_block:nth-of-type(3) .main__card_block_element {
@@ -467,11 +476,21 @@
 }
 
 @media (width >= 1024px) {
+  :root {
+    --h1-font-size: 157px;
+  }
+
   .header {
     height: 768px;
   }
+
+  .header__title {
+    font-size: var(--h1-font-size);
+  }
+
   .header__decription {
-    width: 48%;
+    width: 491px;
+    margin-block-end: 134px;
     margin-inline-end: 20px;
   }
   .header__theme-menu {
@@ -495,11 +514,6 @@
     display: flex;
   }
 
-  .header__theme-menu-desktop {
-    display: block;
-    justify-self: center;
-    margin-inline-end: 28%;
-  } 
 
   .main__card_block_row {
     display: flex;
@@ -507,10 +521,22 @@
     margin-inline: 20px;
   }
 
+  .main__card_block:nth-of-type(1) .main__card_block_element {
+    width: 649px;
+  }
+
+  .main__card_block_element_text {
+    width: 100%;
+    text-overflow: wrap;
+  }
+
+  .main__card_block:nth-of-type(1) {
+    grid-template-columns: auto 649px;
+  }
+
   .main__card_block:nth-of-type(2) {
     display: grid;
     grid-template-rows: auto min-height;
-    margin-block: 0;
     padding-block: 0;
     height: fit-content;
     gap: 20px;
@@ -530,7 +556,6 @@
   .main__card_block:nth-of-type(2) .main__card_block_element_text {
     height: fit-content;
     margin-block: 10px 0;
-    margin: 0;
   }
 
   .main__card_block:nth-of-type(2) .main__card_block_element_title {

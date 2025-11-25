@@ -26,11 +26,11 @@
 }
 */
 
-.header__top-angle-text {
+.theme-light .header__top-angle-text {
   display: none;
 }
 
-.header__top-angle-circle {
+.theme-light .header__top-angle-circle {
   display: none;
 }
 
