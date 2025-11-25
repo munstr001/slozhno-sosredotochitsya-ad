@@ -1,51 +1,10 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
-/* Файл variables.css */
 :root {
-  --background-image: url("../images/cover-image-dark.png");
-  --bold-font-weight: 700;
-  --regular-font-weight: 400;
-  --page-font-family: 'IBM Plex mono';
-  --border-color: #FF0070;
-  --main-page-color: #FF0070;
-  --menu-button-color: #FF0070;
-  --h1-font-color: #DB00FF;
-  --h1-shadow-color: #FF0070;
-  --h3-background-color: #FF0070;
-  --h3-font-color: #000;
-  --theme-menu-font-color: #FF0070;
-  --angle-font-color: #FF0070;
-  --h2-font-color: #FF0070;
-  --background-color: #000028;
-  --card-text-color: #F1B2CE;
-  --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --h1-font-family: 'IBM Plex mono';
-  --h1-font-weight: 700;
-  --h1-font-style: Bold;
-  --h1-line-height: 83%;
-  --header-height: 668px;
-  --footer-height: 668px;
-  --h3-font-family: 'IBM Plex mono';
-  --h3-font-weight: 700;
-  --h3-font-style: Bold;
-  --h3-font-size: 1.125rem;
-  --h3-line-height: 130%;
-  --h2-font-family: 'IBM Plex mono';
-  --h2-font-weight: 700;
-  --h2-font-style: Bold;
-  --h2-font-size: 1.125rem;
-  --h2-line-height: 130%;
-  --card-text-font-family: 'IBM Plex mono';
-  --card-text-font-weight: 400;
-  --card-text-font-style: Regular;
-  --card-text-font-size: 18px;
-  --card-text-line-height: 130%;
-  --card-text-color: #F1B2CE;
-  --h3-font-weight-after-subtitle: 400;
-  --margin-inline: 10px;
-  --header-background-image: url("../images/cover-image-dark.png");
-  --menu-font-size: 18px;
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --sub-text-color: #000028;
+  --accent-color: #ff0070;
+  --font: 'IBM Plex mono';
+  --font-size: 18px;
+  --btn-color:#ff0070;
+  --backgroung-image: url(../images/cover-image-dark.png);
 }

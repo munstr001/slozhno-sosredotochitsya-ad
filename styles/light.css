@@ -1,36 +1,42 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-light {
-  --background-image: url("../images/cover-image-light.png");
-  --page-font-family: 'IBM Plex mono';
-  --border-color: #353430;
-  --main-page-color: #FF8DCB;
-  --menu-button-color: #353430;
-  --h1-font-color: #FFC2E6;
-  --h1-shadow-color: #FF8DCB;
-  --h3-background-color: #FF8DCB;
-  --h3-font-color: #353430;
-  --theme-menu-font-color: #353430;
-  --h2-font-color: #353430;
-  --background-color: #FFF1F7;
-  --card-text-color: #353430;
+.page.theme_light {
+  --title-color: #FFC2E6;
+  --text-color: #353430;
+  --sub-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --btn-color: #353430;
+  --backgroung-image: url(../images/cover-image-light.png);
 }
 
-/*
-.theme-light .page {
+.page.theme_light .decorative__element {
+  display: none;
+}
+
+.page.theme_light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-color: #FFC2E6;
+    --text-color: #353430;
+    --sub-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --btn-color: #353430;
+    --backgroung-image: url(../images/cover-image-light.png);
+  }
   
-}
-*/
-
-.header__top-angle-text {
-  display: none;
-}
-
-.header__top-angle-circle {
-  display: none;
+  .decorative__element {
+    display: none;
+  }
+  
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
 }
 
+@media (min-width: 1024px) {
+  .header__title,
+  .footer__title {
+    text-shadow: 4px 4px 0 #FF0070;
+  }
+}
